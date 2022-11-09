@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LAB_1</title>
+    </head>
+<body>
+<!-- 1) HTML text formatting tags -->
+    
+        <p><b>HTML TEXT FORMATTING TAGS</b></p>
+        <p>the standard markup for the web is <abbr title="Hypertext Markup Language">HTML</abbr></p><br>
+
+        <address>
+            NO.27, Milkcolony, Malleshwaram, Westpost, Banglore - 560055.
+        </address><br>
+
+        <p>The following word is spelt is backwards <bdo dir="rtl"></bdo></p>
+
+        <br>This is normal text</br>
+        <br>This is <b>bold</b> text</br>
+        <br>This is <italic>italic</italic> text</br>
+        <br>This is <big>big</big> text</br>
+        <br>This is <small>small</small> text</br>
+        <br>This is <sub>subscript</sub> text</br>
+        <br>This is <sup>superscript</sup> text</br>
+        <br>This is <ins>inserted</ins> text</br>
+        <br>This is <del>deleted</del> text</br>
+        <br>This is <mark>marked</mark> text</br>
+
+<!-- 2) HTML links -->
+
+<!-- 3) HTML images -->
+
+        <p><b>HTML IMAGES & LINKS</b></p>
+        <br><a href="https://www.google.com">Google Link</a></br>
+        
+        <br><a href="image1.html">Image 1</a></br>
+        
+        <br><a href="image2.html">Image 2</a></br>
+
+        <br><a href="image3.html">Image 3</a></br>
+
+<!-- 4) HTML image map -->
+        
+        <p><b>IMAGE MAPPING</b></p>
+        <map name="imagemap1">
+        <area shape="rect"coords="0,0,512,512"href ="image3.html"/>
+        <map name="imagemap2">
+        <area shape="circle"coords="112.5,112.5,106"href ="image1.html"/>
+        </map>
+        <img src="image3.png" usemap="#imagemap1"/>
+        <img src="image5.png" usemap="#imagemap2"/>
+            
+<!-- 5) HTML Lists -->
+            
+        <p><b>LISTS</b></p>
+        <h4>Unordered List</h4>
+        <ul>
+            <li>pizza dough</li>
+            <li>tomato sauce</li>
+            <li>cheese</li>
+            <li>toppings</li>
+                <ul>
+                    <li>pepperoni</li>
+                    <li>olives</li>
+                    <li>capsicum</li>
+                </ul>
+        </ul>
+        
+        <h4>Ordered list</h4>
+        <ol>
+            <li>brush</li>
+            <li>eat</li>
+            <li>college</li>
+            <li>home</li>
+            <li>study</li>
+            <li>sleep</li>
+            <li>sleep</li>
+        </ol>
+            
+        <h4>Description List</h4>
+        <dl>
+            <dt>MCA</dt>
+            <dd>Trimester</dd>
+            <dt>BCA</dt>
+            <dd>Semester</dd>
+        </dl>
+            
+<!-- 6) HTML Tables -->
+            
+        <p><b>TABLES</b></p>
+            <h3>College hours</h3>
+            <table bgcolor="black">
+                <tr bgcolor="red">
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thuday</th>
+                    <th>Friday</th>
+                    <th>Satday</th>
+                </tr>
+                <tr bgcolor="lightgrey">
+                    <td>Closed</td>
+                    <td>9-4</td>
+                    <td>9-4</td>
+                    <td>9-4</td>
+                    <td>9-4</td>
+                    <td>9-4</td>
+                    <td>9-1</td>
+                </tr>
+            </table>
+            
+ <!-- 7) HTML Forms -->
+        
+        <p><b>FORM</b></p>
+            <form>
+		<div style="text-align: left;margin-top: 10px;">
+			<b><p style="font-size: 24px;color: white;">FEEL FREE TO WRITE A REVIEW</p></b>
+			<input type="text" name="name" placeholder="name" class="input">
+			<br>
+			<input type="text" name="number" placeholder="contact" class="input" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
+			<br>
+			<input type="text" name="email" placeholder="email" class="input"> 
+			<br>
+			<textarea rows="10" cols="10" name="addr" style="margin-top: 10px;width: 250px;" placeholder="address"></textarea>
+			<br>
+			
+		</div>
+	</form>
+<input type="button" onclick="submit()" value="SUBMIT" style="margin-left: 0%;width: 200px;height: 30px;">
+
+<div style="background: black;color: white;margin-top: 50px;">
+	<b><p>Feel free to contact</p></b><br>
+	<p>8056955516</p>
+	
+	<p>richiekenathcollin48@gmail.com</p>
+	
+	<p>MD</p>
+</div>
+</body>
+</html>
