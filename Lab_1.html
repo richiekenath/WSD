@@ -114,6 +114,7 @@
         
         <p><b>FORM</b></p>
             <form>
+
 		<div style="text-align: left;margin-top: 10px;">
 			<b><p style="font-size: 24px;color: white;">FEEL FREE TO WRITE A REVIEW</p></b>
 			<input type="text" name="name" placeholder="name" class="input">
@@ -122,6 +123,16 @@
 			<br>
 			<input type="text" name="email" placeholder="email" class="input"> 
 			<br>
+            <p>Choose your favourate course:</p>
+
+
+  <input type="radio" id="a" name="fav_language" value="a">
+  <label for="a">MCA</label><br>
+  <input type="radio" id="b" name="fav_language" value="b">
+  <label for="b">MBA</label><br>
+  <input type="radio" id="c" name="fav_language" value="c">
+  <label for="c">M.COM</label>
+            <br>
 			<textarea rows="10" cols="10" name="addr" style="margin-top: 10px;width: 250px;" placeholder="address"></textarea>
 			<br>
 			
@@ -137,5 +148,56 @@
 	
 	<p>MD</p>
 </div>
+            
+<!-- AUDIO & VIDEO -->           
+            
+<img src="video.png">
+    <br>
+            
+<video width="320" height="240" controls>
+  <source src="912719f0-3e98-4a18-874c-46e2e7783e26.MP4" type="video/mp4">
+</video>
+    <br>
+            
+<audio controls>
+  <source src="Coldplay_Something_Just_Like_This.mp3" type="audio/mp3">
+    <br>
+</audio>
+
+<!-- GEOLOCATION & CANVAS -->
+    
+
+<p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+            
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+</canvas>
+            
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+ctx.stroke();
+</script>
+            
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script> 
 </body>
 </html>
