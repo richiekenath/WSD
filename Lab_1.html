@@ -161,8 +161,8 @@
             
 <audio controls>
   <source src="Coldplay_Something_Just_Like_This.mp3" type="audio/mp3">
-    <br>
 </audio>
+            
 
 <!-- GEOLOCATION & CANVAS -->
     
@@ -198,6 +198,15 @@ function showPosition(position) {
   x.innerHTML = "Latitude: " + position.coords.latitude +
   "<br>Longitude: " + position.coords.longitude;
 }
-</script> 
+function XML() {
+    location.href="Inpatient_rec.xml";
+}
+</script>
+<br>
+<br>
+<br>
+
+<button onclick="XML()">Click here to view xml</button>
+
 </body>
 </html>
