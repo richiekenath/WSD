@@ -1,0 +1,19 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="inpatient_records">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="record" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:byte" name="patid" minOccurs="0"/>
+              <xs:element type="xs:byte" name="tripid" minOccurs="0"/>
+              <xs:element type="xs:string" name="patname"/>
+              <xs:element type="xs:string" name="diagnosis"/>
+              <xs:element type="xs:string" name="doctor"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

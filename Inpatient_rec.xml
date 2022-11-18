@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<!DOCTYPE inpatient_records [
+<!ELEMENT record (patid,patname,diagnosis,doctor)>
+<!ELEMENT patid (#PCDATA)>
+<!ELEMENT patname (#PCDATA)>
+<!ELEMENT diagnosis (#PCDATA)>
+<!ELEMENT doctor (#PCDATA)>
+]>
+
+<inpatient_records>
+
+  <record>
+    <patid>101</patid>
+    <patname>Nicholas Smith</patname>
+    <diagnosis>Rheumatoid bursitis</diagnosis>
+    <doctor>Shanon Levita</doctor>
+  </record>
+
+  <record>
+    <patid>102</patid>
+    <patname>Paul B</patname>
+    <diagnosis>Chronic postrheumatic arthropathy undefined</diagnosis>
+    <doctor>Sherlyn danica</doctor>
+  </record>
+
+  <record>
+    <patid>103</patid>
+    <patname>Alicia J</patname>
+    <diagnosis>Placenta previa with hemorrhage</diagnosis>
+    <doctor>Melwyn Jacob</doctor>
+  </record>
+
+<record>
+    <patid>104</patid>
+    <patname>Ramon C</patname>
+    <diagnosis>Pedal cycle passenger injured in collision with fixed or stationary object in traffic accident</diagnosis>
+    <doctor>Richie Kenath</doctor>
+  </record>
+
+  <record>
+    <patid>105</patid>
+    <patname>William A</patname>
+    <diagnosis>Osseous and subluxation stenosis of intervertebral foramina of abdomen and other regions</diagnosis>
+    <doctor>Ajay Mishael</doctor>
+  </record>
+
+  <record>
+    <patid>106</patid>
+    <patname>Veronica</patname>
+    <diagnosis>Lead-induced chronic gout, unspecified shoulder</diagnosis>
+    <doctor>Kevin Royce</doctor>
+  </record>
+
+  <record>
+    <tripid>107</tripid>
+    <patname>Nithin J</patname>
+    <diagnosis>Scrotal transposition</diagnosis>
+    <doctor>Allan Steve</doctor>
+  </record>
+
+  <record>
+    <patid>108</patid>
+    <patname>Vijay Samuel</patname>
+    <diagnosis>Poisoning by other agents primarily acting on the respiratory system</diagnosis>
+    <doctor>Calwyn Andrew</doctor>
+  </record>
+
+  <record>
+    <patid>109</patid>
+    <patname>Anusha C</patname>
+    <diagnosis>Papyraceous fetus</diagnosis>
+    <doctor>Freddy Joel</doctor>
+  </record>
+
+  <record>
+    <patid>110</patid>
+    <patname>Sathvick</patname>
+    <diagnosis>Spondylosis without myelopathy or radiculopathy</diagnosis>
+    <doctor>Karen Hannah</doctor>
+  </record>
+  
+
+  
+
+
+</inpatient_records>
